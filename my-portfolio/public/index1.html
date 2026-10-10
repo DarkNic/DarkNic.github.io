@@ -19,20 +19,20 @@
 
     body {
       font-family: Arial, sans-serif;
-      background: #f8fafc;
+      background: #fff5e6;
       color: #1e293b;
       line-height: 1.7;
     }
 
     header {
-      background: #ffffff;
+      background: #ffb86b;
       padding: 18px 8%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 20px;
       flex-wrap: wrap;
-      border-bottom: 1px solid #e2e8f0;
+      /* border-bottom: 1px solid #ae87998b; */
     }
 
     header h2 {
@@ -46,7 +46,7 @@
     }
 
     nav a:hover {
-      color: #2563eb;
+      color: #b7a2e8;
     }
 
     section {
@@ -58,7 +58,8 @@
       text-align: center;
       padding-top: 100px;
       padding-bottom: 100px;
-      background: #eff6ff;
+      background: #69d6c8;
+      /* border-radius: 30px; */
     }
 
     .hero h1 {
@@ -74,7 +75,7 @@
 
     .button {
       display: inline-block;
-      background: #2563eb;
+      background: #173b3f;
       color: white;
       text-decoration: none;
       padding: 12px 22px;
@@ -83,7 +84,7 @@
     }
 
     .button:hover {
-      background: #1d4ed8;
+      background: #b7a2e8;
     }
 
     h2.section-title {
@@ -123,14 +124,25 @@
     }
 
     .skills span {
-      background: #dbeafe;
-      color: #1e40af;
+      background: #b7a2e8;
+      color: white;
       padding: 7px 14px;
       border-radius: 20px;
     }
 
+    .topThingy {
+      background: #173b3f;
+      color: white;
+      padding: 7px 14px;
+      border-radius: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
     .contact {
-      background: #eff6ff;
+      background: #f47466;
     }
 
     footer {
@@ -148,25 +160,27 @@
 
 <body>
   <header>
-    <h2>Nick Bohner</h2>
+    <h2 style="color: black;">Nick Bohner</h2>
 
-    <nav aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
+    <nav aria-label="Main navigation" style="display: flex;
+  flex-direction: row;">
+      <a class="topThingy" style="margin: 0px 2px;" href="#about"><span>About</span></a>
+      <a class="topThingy" style="margin: 0px 2px;" href="#projects"><span>Projects</span></a>
+      <a class="topThingy" style="margin: 0px 2px;" href="#skills"><span>Skills</span></a>
+      <a class="topThingy" style="margin: 0px 2px;" href="#contact"><span>Contact</span></a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <h1>Hi, I'm Nicolas Bohner 👋</h1>
+      <h1 style="color: white;">Hi, I'm Nicolas Bohner 👋</h1>
       <p>
-        I'm an developer who enjoys building
+        I'm a developer who enjoys building
         creative, useful, and user-friendly projects.
         Welcome to my portfolio!
       </p>
       <a class="button" href="#projects">View My Work</a>
+      <a class="button" href="TestPage/">View My Test Page</a>
       <a class="button" href="#contact">Contact Me</a>
     </section>
 
@@ -180,15 +194,33 @@
       </p>
     </section>
 
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <p>Here are some of the tools and technologies I use.</p>
+  
+        <div class="skills">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>GitHub</span>
+          <span>React</span>
+          <span>C#</span>
+          <span>Typescript</span>
+          <span>Notion</span>
+          <span>Azure</span>          
+          <span>T-SQL</span>
+          <span>Jack of many trades</span>
+        </div>
+      </section>
+
     <section id="projects">
       <h2 class="section-title">My Projects</h2>
 
       <div class="projects">
         <article class="project-card">
-          <h3>Project One</h3>
+          <h3>Project Harmony Vaulters</h3>
           <p>
-            A short description of a project you created,
-            the problem it solves, and the tools you used.
+            Rose-Hulman project for introduction into web development. Basic use if noSQL database via FireBase, html, javascript, multi-platform log-in, and css. Developed for a horse vaulting team as a home page as well as to organize/view practices. 
           </p>
           <p>
             <a href="https://github.com/your-username"
@@ -226,26 +258,9 @@
           </p>
         </article>
       </div>
-    </section>
+      <!--<iframe src="/files/BohnerResume2026.pdf" width="100%" height="600px" style="border:none;"></iframe>-->
 
-    <section id="skills">
-      <h2 class="section-title">My Skills</h2>
-      <p>Here are some of the tools and technologies I use.</p>
-
-      <div class="skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>GitHub</span>
-        <span>React</span>
-        <span>C#</span>
-        <span>Typescript</span>
-        <span>Notion</span>
-        <span>Azure</span>          
-        <span>T-SQL</span>
-        <span>Jack of many trades</span>
-      </div>
-    </section>
+    </section>    
 
     <section id="contact" class="contact">
       <h2 class="section-title">Get In Touch</h2>
