@@ -104,7 +104,7 @@ function Hero() {
           OPEN TO NEW CHALLENGES
         </div>
         <div className="triangle-image">
-          <img src="../public/Self.jpg" alt="Main portrait" />
+          <img src="/Self.jpg" alt="Main portrait" />
         </div>
 
         <p className="eyebrow">HELLO! I'M</p>
