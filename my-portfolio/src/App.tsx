@@ -13,42 +13,47 @@ type Project = {
 
 const skills = [
   'TypeScript',
-  'JavaScript',
+  'C#',
   'React',
   'HTML & CSS',
   'Node.js',
   'Git & GitHub',
   'REST APIs',
-  'Responsive Design',
+  'SQL',
+  'Firebase',
+  'Java',
+  'Microsoft Azure',
+  'Microsoft Entra ID',
+  'Microsoft Office Products',
 ]
 
 const projects: Project[] = [
   {
     number: '01',
-    title: 'Project Alpha',
+    title: 'Harmony Vaulters',
     description:
-      'A responsive web application designed to simplify a real-world workflow with a clean, accessible interface.',
-    tags: ['React', 'TypeScript', 'CSS'],
-    github: 'https://github.com/YOUR_USERNAME/project-alpha',
-    demo: 'https://YOUR_USERNAME.github.io/project-alpha/',
+      'Rose-Hulman project for introduction into web development. Basic use if noSQL database via FireBase, html, javascript, multi-platform log-in, and css. Developed for a horse vaulting team as a home page as well as to organize/view practices.',
+    tags: ['HTML', 'JavaScript', 'CSS'],
+    github: '',
+    demo: 'https://harmony-vaulters-csse280.web.app/home.html',
   },
   {
     number: '02',
     title: 'Project Beta',
     description:
-      'An interactive dashboard that transforms useful data into clear visualizations and actionable insights.',
-    tags: ['TypeScript', 'API', 'UI Design'],
-    github: 'https://github.com/YOUR_USERNAME/project-beta',
-    demo: 'https://YOUR_USERNAME.github.io/project-beta/',
+      'To be removed - RHIT group project for developing a local application for dog adoption using java and SQL.',
+    tags: ['Java', 'SQL', 'UI Design'],
+    github: 'https://github.com/DarkNic/CSSE333PairedPaws',
+    demo: '',
   },
   {
     number: '03',
-    title: 'Project Gamma',
+    title: 'XSoft - Financials',
     description:
-      'A lightweight tool built to solve a practical problem, with an emphasis on performance and usability.',
-    tags: ['React', 'JavaScript', 'Vite'],
-    github: 'https://github.com/YOUR_USERNAME/project-gamma',
-    demo: '',
+      'Work in progress which is my employment project.',
+    tags: ['React', 'C#', 'Vite'],
+    github: '',
+    demo: 'https://www.xsoftinc.com/Page/Show/31',
   },
 ]
 
@@ -65,7 +70,7 @@ function Header() {
     <header className="site-header">
       <a className="brand" href="#home" onClick={closeMenu}>
         <span className="brand-mark">Y.</span>
-        <span>YOUR NAME</span>
+        <span>Nick B</span>
       </a>
 
       <button
@@ -102,7 +107,7 @@ function Hero() {
         <p className="eyebrow">HELLO, WORLD. I'M</p>
 
         <h1>
-          Your Name<span className="accent">.</span>
+          Nick<span className="accent">.</span>
           <br />
           <span className="muted-heading">I build things</span>
           <br />
@@ -112,7 +117,7 @@ function Hero() {
         <p className="hero-description">
           I'm a developer passionate about turning ideas into useful,
           intuitive digital experiences. I enjoy solving problems,
-          learning new technologies, and building things that matter.
+          learning new technologies, and expanding my skill set.
         </p>
 
         <div className="hero-actions">
@@ -126,14 +131,14 @@ function Hero() {
 
         <div className="social-links">
           <a
-            href="https://github.com/YOUR_USERNAME"
+            href="https://github.com/DarkNic"
             target="_blank"
             rel="noreferrer"
           >
             GitHub <ArrowIcon />
           </a>
           <a
-            href="https://www.linkedin.com/in/YOUR_USERNAME/"
+            href="https://www.linkedin.com/in/nicolasbohner"
             target="_blank"
             rel="noreferrer"
           >
@@ -154,7 +159,7 @@ function Hero() {
           <pre>
             <code>
               <span className="code-purple">const</span>{' developer = {\n'}
-              {'  '}name: <span className="code-green">'Your Name'</span>,
+              {'  '}name: <span className="code-green">'Nick Bohner'</span>,
               {'\n'}
               {'  '}role: <span className="code-green">'Developer'</span>,
               {'\n'}
@@ -162,7 +167,7 @@ function Hero() {
               {'\n'}
               {'  '}learning: <span className="code-green">'Always'</span>,
               {'\n'}
-              {'  '}available: <span className="code-orange">true</span>,
+              {'  '}available: <span className="code-orange">false</span>,
               {'\n'}
               {'}\n\n'}
               <span className="code-comment">
@@ -300,9 +305,11 @@ function Projects() {
             </div>
 
             <div className="project-links">
-              <a href={project.github} target="_blank" rel="noreferrer">
-                Source code <ArrowIcon />
-              </a>
+              {project.github && (
+                <a href={project.github} target="_blank" rel="noreferrer">
+                  Source code <ArrowIcon />
+                </a>
+              )}
               {project.demo && (
                 <a href={project.demo} target="_blank" rel="noreferrer">
                   Live demo <ArrowIcon />
@@ -330,7 +337,7 @@ function Contact() {
           I'm always happy to connect, talk about interesting projects,
           and explore new opportunities.
         </p>
-        <a className="button button-primary" href="mailto:YOUR_EMAIL@example.com">
+        <a className="button button-primary" href="https://www.linkedin.com/in/nicolasbohner">
           Say hello <ArrowIcon />
         </a>
       </div>
@@ -343,7 +350,7 @@ function Footer() {
     <footer className="site-footer">
       <a className="brand" href="#home">
         <span className="brand-mark">Y.</span>
-        <span>YOUR NAME</span>
+        <span>Nick B</span>
       </a>
       <p>Designed & built with React and TypeScript.</p>
       <a href="#home" className="back-to-top">Back to top ↑</a>
