@@ -360,6 +360,7 @@ function Footer() {
 export default function App() {
   return (
     <>
+    <meta name="robots" content="noindex, nofollow" />
       <Header />
       <main>
         <Hero />
