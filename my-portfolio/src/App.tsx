@@ -39,7 +39,7 @@ const projects: Project[] = [
   },
   {
     number: '02',
-    title: 'Project Beta',
+    title: 'Paired Paws',
     description:
       'To be removed - RHIT group project for developing a local application for dog adoption using java and SQL.',
     tags: ['Java', 'SQL', 'UI Design'],
@@ -51,14 +51,14 @@ const projects: Project[] = [
     title: 'XSoft - Financials',
     description:
       'Work in progress which is my employment project.',
-    tags: ['React', 'C#', 'Vite'],
+    tags: ['Microsoft Azure', 'Much more...'],
     github: '',
     demo: 'https://www.xsoftinc.com/Page/Show/31',
   },
 ]
 
 function ArrowIcon() {
-  return <span aria-hidden="true"></span>
+  return <span aria-hidden="true">&#10132;</span>
 }
 
 function Header() {
@@ -69,7 +69,7 @@ function Header() {
   return (
     <header className="site-header">
       <a className="brand" href="#home" onClick={closeMenu}>
-        <span className="brand-mark">Y.</span>
+        <span className="brand-mark">NB</span>
         <span>Nick B</span>
       </a>
 
@@ -101,17 +101,20 @@ function Hero() {
       <div className="hero-copy">
         <div className="availability">
           <span className="status-dot" />
-          OPEN TO OPPORTUNITIES
+          OPEN TO NEW CHALLENGES
+        </div>
+        <div className="triangle-image">
+          <img src="../public/Self.jpg" alt="Main portrait" />
         </div>
 
-        <p className="eyebrow">HELLO, WORLD. I'M</p>
+        <p className="eyebrow">HELLO! I'M</p>
 
         <h1>
           Nick<span className="accent">.</span>
           <br />
           <span className="muted-heading">I build things</span>
           <br />
-          for the web.
+          because I can.
         </h1>
 
         <p className="hero-description">
@@ -158,7 +161,7 @@ function Hero() {
           </div>
           <pre>
             <code>
-              <span className="code-purple">const</span>{' developer = {\n'}
+              <span className="code-purple">const</span>{' caffeinatedIndividual = {\n'}
               {'  '}name: <span className="code-green">'Nick Bohner'</span>,
               {'\n'}
               {'  '}role: <span className="code-green">'Developer'</span>,
@@ -167,7 +170,7 @@ function Hero() {
               {'\n'}
               {'  '}learning: <span className="code-green">'Always'</span>,
               {'\n'}
-              {'  '}available: <span className="code-orange">false</span>,
+              {'  '}available: <span className="code-orange">false</span>, <span className="code-comment">// But always open to new ideas</span>,
               {'\n'}
               {'}\n\n'}
               <span className="code-comment">
@@ -179,10 +182,6 @@ function Hero() {
         <div className="floating-chip chip-one"> Problem solver</div>
         <div className="floating-chip chip-two">⌘ Always learning</div>
       </div>
-
-      <a className="scroll-cue" href="#about">
-        <span /> SCROLL TO EXPLORE
-      </a>
     </section>
   )
 }
@@ -349,7 +348,7 @@ function Footer() {
   return (
     <footer className="site-footer">
       <a className="brand" href="#home">
-        <span className="brand-mark">Y.</span>
+        <span className="brand-mark">NB</span>
         <span>Nick B</span>
       </a>
       <p>Designed & built with React and TypeScript.</p>
