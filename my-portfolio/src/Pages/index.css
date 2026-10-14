@@ -375,12 +375,12 @@ a:focus-visible {
 }
 
 .chip-one {
-  top: 20px;
+  top: -20px;
   right: -5px;
 }
 
 .chip-two {
-  bottom: 15px;
+  bottom: 0px;
   left: -15px;
 }
 
