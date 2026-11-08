@@ -10,6 +10,7 @@ import OffTheScreen from "./Pages/OffTheScreen";
 import CaffeineRequired from "./Pages/CaffeineRequired"
 
 //TODO: Implement Skeleton Page
+//TODO: Implement cookies (color theme, language, etc.)
 function App() {
   return (
     <BrowserRouter>
