@@ -1,7 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap');
-
+/* Light theme */
 :root {
-  font-family: 'Inter', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #38372f;
+  background: #ede5d4;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg: #ede5d4;
+  --header-bg: #c2aa7a55;
+  --card-bg: linear-gradient(145deg, #eee4ce, #d7c5a2);
+  --surface: #f7f2e8;
+  --surface-hover: #e9e0d0;
+  --border: #d5c9b5;
+  --text: #38372f;
+  --muted: #827a69;
+  --accent: #65734c;
+  --mono: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  --content-width: 1100px;
+
+  --purple: #8060a3;
+  --green: #65734c;
+  --orange: #a66f52;
+  --comment: #98917f;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: #e8eaf0;
   background: #080b12;
   font-synthesis: none;
@@ -10,14 +37,42 @@
   -moz-osx-font-smoothing: grayscale;
 
   --bg: #080b12;
+  --header-bg: #080b12e0;
+  --card-bg: linear-gradient(145deg, #121722, #0d1119);
   --surface: #10141e;
   --surface-hover: #151b27;
   --border: #252b38;
   --text: #e8eaf0;
   --muted: #9299aa;
   --accent: #c2f970;
-  --mono: 'DM Mono', monospace;
+  --mono: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
   --content-width: 1100px;
+
+  --purple: #c6a5f7;
+  --green: #c2f970;
+  --orange: #f2b47e;
+  --comment: #6e7a8d;
+}
+
+/* Apply theme variables */
+body {
+  background-color: var(--background);
+  color: var(--color);
+    margin: 0;
+  min-width: 320px;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.card {
+  background-color: var(--background);
+  border: 1px solid var(--border);
+}
+
+a {
+  color: var(--accent);
+    text-decoration: none;
 }
 
 * {

@@ -1,0 +1,50 @@
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+}
+
+.brand-mark {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  color: var(--bg);
+  background: var(--accent);
+  border-radius: 9px;
+  font-size: 17px;
+  letter-spacing: -0.06em;
+}
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1180px;
+  margin: auto;
+  padding: 25px 32px;
+  border-top: 1px solid var(--border);
+}
+
+.site-footer p,
+.back-to-top {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.back-to-top {
+  transition: color 180ms ease;
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 25px 20px;
+    gap: 8px;
+  }
+}
