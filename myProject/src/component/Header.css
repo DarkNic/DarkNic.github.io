@@ -1,0 +1,108 @@
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+}
+
+.brand-mark {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  color: var(--bg);
+  background: var(--accent);
+  border-radius: 9px;
+  font-size: 17px;
+  letter-spacing: -0.06em;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: auto;
+  padding: 22px 40px;
+  background: var(--header-bg);
+  border-bottom: 1px solid #252b38a6;
+  backdrop-filter: blur(18px);
+}
+
+.menu-toggle {
+  display: none;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  font-size: 18px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.nav a,
+.project-links a {
+  transition: color 180ms ease;
+}
+
+.nav a:hover,
+.project-links a:hover {
+  color: var(--accent);
+}
+
+.nav-contact {
+  color: var(--text);
+}
+
+
+@media (max-width: 600px) {
+  .site-header {
+    padding: 16px 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: calc(100% + 1px);
+    right: 12px;
+    left: 12px;
+    display: none;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+    padding: 10px;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+  }
+
+  .nav.nav-open {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 14px;
+  }
+
+  .nav-contact {
+    border-top: 1px solid var(--border);
+  }
+
+  h1 {
+    font-size: clamp(43px, 12vw, 64px);
+  }
+}
