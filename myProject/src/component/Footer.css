@@ -2,7 +2,7 @@
   display: inline-flex;
   align-items: center;
   gap: 11px;
-  font-size: 12px;
+  font-size: .8rem;
   font-weight: 700;
   letter-spacing: 0.11em;
 }
@@ -15,7 +15,7 @@
   color: var(--bg);
   background: var(--accent);
   border-radius: 9px;
-  font-size: 17px;
+  font-size: 1.5rem;
   letter-spacing: -0.06em;
 }
 
@@ -33,7 +33,7 @@
 .site-footer p,
 .back-to-top {
   color: var(--muted);
-  font-size: 10px;
+  font-size: .75rem;
 }
 
 .back-to-top {

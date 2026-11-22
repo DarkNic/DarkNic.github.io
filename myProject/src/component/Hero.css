@@ -24,7 +24,7 @@
 .section-intro {
   max-width: 520px;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 1.9;
 }
 
@@ -48,19 +48,19 @@
   gap: 9px;
   margin-bottom: 40px;
   padding: 9px 12px;
-  color: #c5e9a1;
+  color: #dce2eb;
   background: #152019;
   border: 1px solid #263d2c;
   border-radius: 30px;
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: .75rem;
   letter-spacing: 0.04em;
 }
 
 .status-dot {
   width: 7px;
   height: 7px;
-  background: var(--accent);
+  background: greenyellow;
   border-radius: 50%;
   box-shadow: 0 0 12px #c2f97077;
 }
@@ -87,7 +87,7 @@
   margin: 0;
   color: var(--muted);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: .75rem;
   letter-spacing: 0.12em;
 }
 
@@ -114,7 +114,7 @@
   padding: 0 19px;
   border: 1px solid transparent;
   border-radius: 8px;
-  font-size: 12px;
+  font-size: .75rem;
   font-weight: 600;
   transition: transform 180ms ease, background 180ms ease;
 }
@@ -124,12 +124,12 @@
 }
 
 .button-primary {
-  color: #101509;
+  color: var(--bg);
   background: var(--accent);
 }
 
 .button-primary:hover {
-  background: #d3ff91;
+  background: var(--primary-hover);
 }
 
 .button-secondary {
@@ -147,7 +147,7 @@
   gap: 24px;
   margin-top: 35px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: .75rem;
 }
 
 .visual-glow {
@@ -164,7 +164,7 @@
   width: 100%;
   max-width: 390px;
   overflow: hidden;
-  background: var(--background);
+  background: var(--surface);
   border: 1px solid #303747;
   border-radius: 14px;
   box-shadow: 0 25px 80px #0005;
@@ -179,9 +179,8 @@
   color: var(--muted);
   border-bottom: 1px solid var(--border);
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: .75rem;
 }
-
 
 .code-card pre {
   overflow-x: auto;
@@ -189,7 +188,7 @@
   padding: 26px 20px 30px;
   color: var(--text);
   font-family: var(--mono);
-  font-size: 12px;
+  font-size: .75rem;
   line-height: 2;
 }
 
@@ -209,7 +208,6 @@
   color: var(--comment);
 }
 
-
 .floating-chip {
   position: absolute;
   padding: 11px 14px;
@@ -217,7 +215,7 @@
   background: #171d29;
   border: 1px solid #343b4a;
   border-radius: 9px;
-  font-size: 11px;
+  font-size: .75rem;
   box-shadow: 0 8px 25px #0004;
 }
 
@@ -227,10 +225,9 @@
 }
 
 .chip-two {
-  bottom: 0px;
+  bottom: -5px;
   left: -15px;
 }
-
 
 .window-dots {
   display: flex;
@@ -250,6 +247,20 @@
 
 .window-dots i:nth-child(3) {
   background: #61c454;
+}
+
+.text-clarity {
+  display: inline-block;
+  background-color: color-mix(
+    in srgb,
+    var(--bg) 75%,
+    transparent
+  );
+  border-radius: 12px;
+  padding-right: 0.5rem;
+  line-height: 1.5;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 @media (min-width: 1400px) {
@@ -288,11 +299,11 @@
 
     .availability {
     margin-bottom: 30px;
-    font-size: 9px;
+    font-size: .7rem;
   }
 
     .code-card pre {
-    font-size: 10px;
+    font-size: .75rem;
   }
   
   .chip-one {
