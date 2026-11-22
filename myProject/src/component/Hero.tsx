@@ -16,14 +16,16 @@ export function Hero() {
         <p className="eyebrow">HELLO! I'M</p>
 
         <h1>
-          Nick<span className="accent">.</span>
+          
+          <span className="text-clarity">Nick</span>
+          <span className="accent">.</span>
           <br />
-          <span className="muted-heading">I build things</span>
+          <span className="muted-heading text-clarity">I build things</span>
           <br />
-          because I can.
+          <span className="text-clarity">because I can.</span>
         </h1>
 
-        <p className="hero-description">
+        <p className="hero-description text-clarity">
           I'm a developer passionate about turning ideas into useful
           experiences. I enjoy solving problems,
           learning new technologies, and expanding my skill set. I am forever learning just how little I know.

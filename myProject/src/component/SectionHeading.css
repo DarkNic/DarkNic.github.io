@@ -16,7 +16,7 @@
 .eyebrow {
   color: var(--muted);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: .75rem;
   letter-spacing: 0.12em;
 }
 

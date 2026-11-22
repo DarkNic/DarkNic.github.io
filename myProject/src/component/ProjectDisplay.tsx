@@ -100,7 +100,7 @@ export function ProjectDisplay() {
       <SectionHeading
         number="03"
         label="SELECTED WORK"
-        title="Things I've built."
+        title="Things I'm building."
       />
 
       <div className="projects-grid">
